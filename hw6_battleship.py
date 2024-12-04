@@ -339,8 +339,6 @@ Returns: None
 def runGameTurn(data, row, col):
     userBoard = data['userBoard']
     compBoard = data['computerBoard']
-    if compBoard[row][col] == 4:
-        return
     if data['winner'] != None:
         return
     if compBoard[row][col] in [3, 4]:
